@@ -1,0 +1,358 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(https://jeon-hyerin.github.io/landing/assets/images/bg/overlay.gif);
+    background-position: 0 0;
+    background-size: 250px;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 300;
+}
+
+
+
+// #container {
+//     // padding-top: 7vw;
+//     // overflow: hidden;
+// }
+
+.sc-main {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .title-area {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .title {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            font-size: 20vw;
+            text-transform: uppercase;
+            opacity: 1;
+            white-space: nowrap;
+            font-family: 'new';
+
+            @include mobile {
+                font-size: 25vw;
+            }
+        }
+    }
+
+    .deco1 {
+        position: absolute;
+        right: 2vw;
+        bottom: 20vw;
+        max-width: 30vw;
+        line-height: 1.2;
+
+        @include tablet {
+            bottom: 30vw;
+        }
+
+        @include mobile {
+            right: 8vw;
+            top: 20vw;
+            max-width: 40vw;
+        }
+    }
+
+    .deco2 {
+        position: absolute;
+        top: 2vw;
+        left: 30vw;
+        line-height: 1.2;
+
+        @include tablet {
+            top: 4vw;
+        }
+
+        @include mobile {
+            top: 15vw;
+            left: 10vw;
+        }
+    }
+
+    .deco3 {
+        position: absolute;
+        left: 2vw;
+        bottom: 5vw;
+        max-width: 30vw;
+        line-height: 1.2;
+
+        @include tablet {
+            left: 5vw;
+            bottom: 10vw;
+        }
+
+        @include mobile {
+            bottom: 20vw;
+            max-width: 50vw;
+        }
+    }
+
+    .img-box {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+
+        &.box1 {
+            top: 2vw;
+            left: 50vw;
+
+            @include tablet {
+                top: 5vw;
+                width: 100px;
+                height: 100px;
+            }
+
+            @include mobile {
+                top: 40vw;
+                left: 10vw;
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        &.box2 {
+            width: 200px;
+            height: 200px;
+            top: 10vw;
+            right: 2vw;
+
+            @include tablet {
+                width: 150px;
+                height: 150px;
+                top: 18vw;
+                right: 8vw;
+            }
+
+            @include mobile {
+                width: 100px;
+                height: 100px;
+                top: 58vw;
+                right: 5vw;
+            }
+        }
+
+        &.box3 {
+            width: 300px;
+            height: 300px;
+            right: 20vw;
+            bottom: 0vw;
+
+            @include tablet {
+                width: 240px;
+                height: 240px;
+                right: 28vw;
+                bottom: 3vw;
+            }
+
+            @include mobile {
+                width: 150px;
+                height: 150px;
+                right: 8vw;
+            }
+        }
+    }
+}
+
+.sc-work {
+    height: 100vh;
+    margin-top: 100vh;
+
+    .swiper {
+        height: 100%;
+        position: relative;
+    }
+
+    // #3534db
+    .swiper-wrapper {
+        .swiper-slide {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            background: #28282e;
+            color: #fff;
+
+            .img-area {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                position: absolute;
+
+                @include tablet {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                &.img1 {
+                    top: 2vw;
+                    left: 50vw;
+
+                    @include tablet {
+                        top: 10vw;
+                    }
+
+                    @include mobile {
+                        top: 15vw;
+                        left: 20vw;
+                    }
+                }
+
+                &.img2 {
+                    width: 200px;
+                    height: 200px;
+                    top: 10vw;
+                    right: 2vw;
+
+                    @include tablet {
+                        width: 150px;
+                        height: 150px;
+                        top: 18vw;
+                        right: 8vw;
+                    }
+
+                    @include mobile {
+                        width: 120px;
+                        height: 120px;
+                        top: 40vw;
+                        right: 15vw;
+                    }
+                }
+
+                &.img3 {
+                    width: 300px;
+                    height: 300px;
+                    right: 20vw;
+                    bottom: 5vw;
+
+                    @include tablet {
+                        width: 200px;
+                        height: 200px;
+                        bottom: 15vw;
+                    }
+
+                    @include mobile {
+                        width: 150px;
+                        height: 150px;
+                        right: 40vw;
+                        bottom: 20vw;
+                    }
+                }
+            }
+
+            .des-area {
+                max-width: 600px;
+
+                @include mobile {
+                    margin-left: 60px;
+                }
+
+                h3 {
+                    font-size: 15vw;
+                    font-family: 'new';
+                    margin-bottom: 20px;
+                    white-space: nowrap;
+                }
+
+                p {
+                    font-size: 1.3em;
+                    line-height: 31px;
+                    margin-bottom: 30px;
+                }
+
+                .btn-box {
+                    font-size: 14px;
+                    line-height: 24px;
+                    display: flex;
+                    gap: 50px;
+
+                    a {
+                        display: block;
+                        text-transform: uppercase;
+                        // &.btn-view {}
+                        // &.btn-review {}
+
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            width: 8px;
+                            height: 8px;
+                            border: 3px solid #fff;
+                            border-width: 0 2px 2px 0;
+                            transform: rotate(-45deg);
+                            margin-left: 5px;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 10;
+        width: 100px;
+
+        @include mobile {
+            width: 60px;
+        }
+
+        &.prev {
+            left: 0;
+            background: linear-gradient(93deg, rgba(40, 40, 46, 1) 39%, rgba(40, 40, 46, 0) 70%);
+        }
+
+        &.next {
+            right: 0;
+            background: linear-gradient(281deg, rgba(40, 40, 46, 1) 39%, rgba(40, 40, 46, 0) 70%);
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 2vw;
+        display: flex;
+
+        .swiper-pagination-bullet {
+            width: 16.6%;
+            height: 2px;
+            border-radius: 0;
+            background-color: #fff;
+            margin: 0;
+        }
+    }
+}

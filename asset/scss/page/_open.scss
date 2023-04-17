@@ -1,0 +1,43 @@
+.page-load {
+    z-index: 10000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translate(0px, -100%);
+    transition: transform 2s;
+
+    &.open {
+        transform: translate3d(0, 0%, 0);
+        transition: transform 0s;
+    }
+
+    .page-inner {
+        z-index: 1001;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-transform: uppercase;
+
+        .name {
+            display: block;
+            font-size: 5em;
+            font-family: 'druk-text';
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        span {
+            display: block;
+            font-size: 2em;
+        }
+    }
+}

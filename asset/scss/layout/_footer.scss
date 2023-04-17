@@ -1,0 +1,43 @@
+#footer {
+    position: relative;
+    background: #28282e;
+
+    .inner {
+        padding: 50px 5vw 100px 5vw;
+        text-transform: uppercase;
+        color: #fff;
+
+        @include mobile {
+            padding-top: 100px;
+        }
+    }
+
+    .title {
+        font-size: 15vw;
+        font-family: 'new';
+        text-align: center;
+    }
+
+    .addr-area {
+        margin-top: 100px;
+        display: flex;
+        gap: 40px;
+        text-transform: uppercase;
+
+        @include tablet {
+            justify-content: center;
+        }
+
+        a {
+            display: block;
+            padding: 20px 25px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+}

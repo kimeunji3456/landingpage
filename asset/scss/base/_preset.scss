@@ -1,0 +1,36 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+img {
+    object-fit: cover;
+    vertical-align: top;
+}
+
+body {
+    font-family: 'Pretendard';
+    background-color: #ddd;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 16px;
+    color: #28282e;
+}
+
+.inner {
+    padding: 2vw 5vw;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    min-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+}
